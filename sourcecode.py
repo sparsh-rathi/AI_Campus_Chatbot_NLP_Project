@@ -92,7 +92,29 @@ def getResponse(sen, ints, intents_json):
                             continue
                 if(result==""):
                     result=" roll number for given student name not fount"
-    
+            elif(i['tag'] == 'second_floor'):
+                lis = list(sen.split(' '))
+                print(lis)
+                print()
+                l= len(lis)
+                for idx,val in enumerate(lis):
+                    if(val =='is'):
+                        n=idx
+                        break
+                j= lis[n+1:]
+                k="".join(j)
+                print(k)
+                print()
+                sn=i['responses']
+                for a in sn:
+                    for b in a['directions']:
+                        if(b.replace(' ', '').lower() == k.replace(' ', '').lower()):
+                            result =  a['directions'][b]
+                            break
+                        else:
+                            continue
+                if(result==""):
+                    result="Location not found"
     return result
 
 def chatbot_response(msg):
