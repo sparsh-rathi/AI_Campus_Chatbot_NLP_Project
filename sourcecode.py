@@ -91,7 +91,8 @@ def getResponse(sen, ints, intents_json):
                         else:
                             continue
                 if(result==""):
-                    result=" roll number for given student name not fount"
+                    result=" roll number for given student name not found"
+                    
             elif(i['tag'] == 'second_floor'):
                 lis = list(sen.split(' '))
                 print(lis)
@@ -115,6 +116,26 @@ def getResponse(sen, ints, intents_json):
                             continue
                 if(result==""):
                     result="Location not found"
+
+            elif(i['tag'] == 'get_labexam_date'):
+                lis = list(sen.split(' '))
+                l=len(lis)
+                for idx,val in enumerate(lis):
+                    if(val == 'of'):
+                        n = idx
+                        break
+                j = lis[n+1:]
+                k="".join(j)
+                sid=i['responses']
+                for a in sid:
+                    for b in a['dates']:
+                        if((b.replace(' ','').lower()) == (k.replace(' ','').lower())):
+                            result = a['dates'][b]
+                            break
+                        else:
+                            continue
+                    if(result==""):
+                        result=" please enter a valid subject"
     return result
 
 def chatbot_response(msg):
