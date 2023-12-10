@@ -79,46 +79,15 @@
                 "What support is offered"
             ],
             "responses": [
-                "I am a personal assistant of Balaji Srinivasan and I am a Python fan",
-                "I am a Python fanboy and a subscriber of Balaji Srinivasan's YouTube channel"
+                "I am a chatbot that can give you information about locations on campus< announcements and stundent info"
+                
             ],
             "context": [
                 ""
             ]
         },
-        {
-            "tag": "python_is_best",
-            "patterns": [
-                "Which is the best programming language?",
-                "Can you tell me the best language ever?",
-                "What language can I start for programming",
-                "Is Python language an awesome language?",
-                "I am a beginner and I need to learn a new language"
-            ],
-            "responses": [
-                "Without a doubt, Python is the most BEAUTIFUL language ever! You can start learning it anytime",
-                "I am a fan of Python. It's my favorite ever. If you don't believe me, try it yourself"
-            ],
-            "context": [
-                ""
-            ]
-        },
-        {
-            "tag": "joke",
-            "patterns": [
-                "tell me a joke",
-                "can you tell me a joke",
-                "make some fun",
-                "make me laugh and do some funny joke",
-                "tell me a joke"
-            ],
-            "responses": [
-                "How do functions break up? \n They stop calling each other."
-            ],
-            "context": [
-                ""
-            ]
-        },
+        
+       
         {
             "tag": "students_info",
             "patterns": [
