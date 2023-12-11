@@ -10,13 +10,10 @@ The repository is for the NLP Project on AI Campus Chatbot
 <br>
 2. Run the train_model.py file.
 ![image](https://github.com/sparsh-rathi/AI_Campus_Chatbot_NLP_Project/assets/115660384/74dea85f-d5a6-4c6b-a8a9-9d22d0e1b9de)
-
-
-">
+<br>
 3. Run the sourcecode.py file. This will open the GUI for the chatbot.
 ![image](https://github.com/sparsh-rathi/AI_Campus_Chatbot_NLP_Project/assets/115660384/92818d4a-d1db-49ab-bffe-ed5638c46a32)
-
-">
+<br>
 4. How to write the commands (Some of the prompts need to be written as in the JSON file):
    <br>
    "get_student_name": roll number of NAME
@@ -25,5 +22,5 @@ The repository is for the NLP Project on AI Campus Chatbot
    <br>
    "directions": Find LOCATION (Here, the location must be written exactly as in the JSON file)
    <br>
-   
+   "get_labexam_date" : When is the lab exam of SUBJECT
    
