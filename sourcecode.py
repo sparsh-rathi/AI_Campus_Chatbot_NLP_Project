@@ -61,7 +61,7 @@ def getResponse(sen, ints, intents_json):
                 if any(keyword in sen.lower() for keyword in ["where is", "find", "navigate to", "where can i find"]):
                     location = None
                     for pattern in i['patterns']:
-                        if pattern.lower() in sen.lower():
+                        if pattern.lower() in sen.lower():    
                             for floor, locations in i['responses'][0].items():
                                 if any(loc.lower() in sen.lower() for loc in locations.keys()):
                                     location = next(
@@ -75,6 +75,44 @@ def getResponse(sen, ints, intents_json):
                 else:
                     result = "I'm sorry, I didn't understand the location-related question."
                 break
+
+            elif (i['tag'] == 'get_student_name'):
+                lis = list(sen.split(' '))
+                l = len(lis)
+                j = lis[l-1]
+                k = "".join(j)
+                sn = i['responses']
+                for a in sn:
+                    for b in a['students']:
+                        if (b.lower() == k.lower()):
+                            result = a['students'][b]
+                            break
+                        else:
+                            continue
+                if (result == ""):
+                    result = "name for given roll number not found"
+            
+            elif (i['tag'] == 'get_student_roll'):
+                lis = list(sen.split(' '))
+                l = len(lis)
+                for idx, val in enumerate(lis):
+                    if (val == 'of'):
+                        n = idx
+                        break
+                j = lis[n+1:]
+                k = "".join(j)
+                sid = i['responses']
+                for a in sid:
+                    for b in a['students']:
+                        if ((a['students'][b].replace(' ', '').lower()) == (k.replace(' ', '').lower())):
+                            result = b
+                            break
+                        else:
+                            continue
+                if (result == ""):
+                    result = " roll number for given student name not found"
+                    break
+    
     return result
 
 def chatbot_response(msg):
