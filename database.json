@@ -78,10 +78,15 @@
                 "What you can do?",
                 "What help you provide?",
                 "How you can be helpful?",
-                "What support is offered"
+                "What can you do?",
+                "How you could help me",
+                "What you can do",
+                "What help you provide",
+                "How you can be helpful",
+                "What can you do"
             ],
             "responses": [
-                "I am a chatbot that can give you information about location on campus, announcements and students info."
+                "I am a chatbot that can give you information about locations on the campus, announcements related to project deadlines and lab exams and student information."
             ],
             "context": [
                 ""
@@ -90,12 +95,17 @@
         {
             "tag": "students_info",
             "patterns": [
-                "student data",
-                "roll numbers",
-                "names"
+                "Please provide information related to the students",
+                "Can you provide students' information",
+                "Can you provide roll numbers of students",
+                "Can you provide names of students",       
+                "Please provide information related to the students?",
+                "Can you provide students' information?",
+                "Can you provide roll numbers of students?",
+                "Can you provide names of students?"                
             ],
             "responses": [
-                "Sure, I can help with that. Please provide the roll number you're interested in."
+                "Sure, I can help with that."
             ],
             "context": [
                 "get_student_name"
@@ -104,8 +114,10 @@
         {
             "tag": "get_student_name",
             "patterns": [
-                "Roll number is",
-                "Name of the person with roll number"
+                "Give name corresponding to roll number",
+                "Find person with roll number",
+                "Name of the person with roll number",
+                "Name of"
             ],
             "responses": [
                 {
@@ -313,7 +325,9 @@
         {
             "tag": "get_student_roll",
             "patterns": [
-                "What is the roll number of",
+                "Get me the roll number of",
+                "Find roll number of",
+                "Find roll number of",
                 "Roll number of"
             ],
             "responses": [
@@ -524,7 +538,8 @@
             "patterns": [
                 "Where is",
                 "Find",
-                "Navigate to"
+                "Navigate to",
+                "Where can I find"
             ],
             "responses": [
                 {
@@ -664,26 +679,27 @@
             "tag": "get_labexam_date",
             "patterns": [
                 "When is the lab exam of",
+                "When is the project submission deadline of",
                 "Do you know about the lab exam of",
                 "When do we start with presentations of"
             ],
             "responses": [
                 {
                     "dates": {
-                        "Design and Analyis of Algorithms": "December 7, 2023",
-                        "DAA": "December 7, 2023",
-                        "Database Management System": "December 6, 2023",
-                        "DBMS": "December 6, 2023",
-                        "Digital Image Processing": "December 5, 2023",
-                        "DIP": "December 5, 2023",
-                        "Programming Workshop": "December 14, 2023",
-                        "CN-Lite": "December 11 & 12, 2023",
-                        "OS": "No lab exam!",
-                        "NLP": "No lab exam!",
-                        "History": "November 30, 2023",
-                        "Advertising and Photography": "November 22, 2023",
-                        "Tangible Heritage": "December 6, 2023",
-                        "Cyber Law": "December 29, 2023"
+                        "Design and Analyis of Algorithms": "Lab exam on: December 7, 2023",
+                        "DAA": "Lab exam on: December 7, 2023",
+                        "Database Management System": "Lab exam on: December 6, 2023",
+                        "DBMS": "Lab exam on: December 6, 2023",
+                        "Digital Image Processing": "Lab exam on: December 5, 2023",
+                        "DIP": "Lab exam on: December 5, 2023",
+                        "Programming Workshop": "Lab exam on: December 13, 2023",
+                        "CN-Lite": "Lab exam on: December 12 & 13, 2023",
+                        "OS": "No lab exam! But Lab 7 is due on December 14, 2023",
+                        "NLP": "No lab exam! But the project is due on December 11, 2023",
+                        "History": "Presentations start on November 30, 2023",
+                        "Advertising and Photography": "Presentations start on November 22, 2023",
+                        "Tangible Heritage": "Presentations start on December 6, 2023",
+                        "Cyber Law": "Final Project is due on December 29, 2023"
                     }
                 }
             ],
