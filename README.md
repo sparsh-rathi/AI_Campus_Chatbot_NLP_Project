@@ -15,30 +15,25 @@ Designed for college environments, this project focuses on synchronizing and str
 4. How to write the commands (Some of the prompts need to be written as in the JSON file):
    <br>
    "get_student_name":
-      * Give name corresponding to roll number <ROLL NUMBER>
-      * Find person with roll number" <ROLL NUMBER>
-      * Name of the person with roll number" <ROLL NUMBER>
-      * Name of <ROLL NUMBER>
-      
+   * Give name corresponding to roll number "ROLL NUMBER"
+   * Find person with roll number "ROLL NUMBER"
+   * Name of the person with roll number "ROLL NUMBER"
+   * Name of "ROLL NUMBER"
    <br>
-   "get_student_roll": 
-      * Get me the roll number of <FULL NAME OF THE STUDENT>
-      * Find roll number of <FULL NAME OF THE STUDENT>
-      * Find roll number of <FULL NAME OF THE STUDENT>
-      * Roll number of" <FULL NAME OF THE STUDENT>
-         
+   "get_student_roll":
+   * Get me the roll number of "FULL NAME OF THE STUDENT"
+   * Find roll number of "FULL NAME OF THE STUDENT"
+   * Find roll number of "FULL NAME OF THE STUDENT"
+   * Roll number of "FULL NAME OF THE STUDENT"    
    <br>
    "directions":
-      (Here, the location must be written exactly as in the JSON file)
-      - Find <LOCATION>
-      - Where is <LOCATION>
-      - Navigate to <LOCATION>
-      - Where can I find <LOCATION>
-         
+   * Find "LOCATION"
+   * Where is "LOCATION"
+   * Navigate to "LOCATION"
+   * Where can I find "LOCATION"
    <br>
-   "get_labexam_date" : 
-      * When is the lab exam of <SUBJECT>
-      * When is the project submission deadline of <SUBJECT>
-      * Do you know about the lab exam of <SUBJECT>
-      * When do we start with presentations of <SUBJECT>
-   
+   "get_labexam_date":
+   * When is the lab exam of "SUBJECT"
+   * When is the project submission deadline of "SUBJECT"
+   * Do you know about the lab exam of "SUBJECT"
+   * When do we start with presentations of "SUBJECT"
