@@ -10,10 +10,12 @@ The repository is for the NLP Project on AI Campus Chatbot
 <br>
 2. Run the train_model.py file.
 <br>
-![Alt text]"[gui](https://github.com/sparsh-rathi/AI_Campus_Chatbot_NLP_Project/assets/115660384/ada2f73b-7b99-43ae-8b21-20919ff57abb)
+![image](https://github.com/sparsh-rathi/AI_Campus_Chatbot_NLP_Project/assets/115660384/84da1d3a-c105-49de-aa07-6a4b8162cd84)
+
 ">
 3. Run the sourcecode.py file. This will open the GUI for the chatbot.
-![Alt text]"[train](https://github.com/sparsh-rathi/AI_Campus_Chatbot_NLP_Project/assets/115660384/fc7865c9-3adb-48aa-a822-1ead5e1f043a)
+![image](https://github.com/sparsh-rathi/AI_Campus_Chatbot_NLP_Project/assets/115660384/92818d4a-d1db-49ab-bffe-ed5638c46a32)
+
 ">
 4. How to write the commands (Some of the prompts need to be written as in the JSON file):
    <br>
