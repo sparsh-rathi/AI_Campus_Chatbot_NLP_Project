@@ -15,7 +15,7 @@ nltk.download('punkt')
 lemmatizer = WordNetLemmatizer()
 
 # Load intents from JSON file
-data_file = open('intents.json').read()
+data_file = open('nlp-2.json').read()
 intents = json.loads(data_file)
 
 words = []
@@ -115,23 +115,3 @@ print("Model created and saved")
 
 # Handling specific intents
 
-
-def get_roll_number(name):
-    # Extract data from the "get_roll_number" intent in your JSON file
-    get_roll_number_data = next(
-        (intent['data'] for intent in intents['intents'] if intent['tag'] == 'get_roll_number'), [])
-
-    # Find the matching roll number for the provided name
-    for data_entry in get_roll_number_data:
-        if data_entry['name'].lower() == name.lower():
-            return data_entry['roll_number']
-
-    # Return "Not found" if the name is not in the data
-    return "Not found"
-
-
-# Example usage:
-name_to_search = "Aashish Varma Rudraraju"
-roll_number_result = get_roll_number(name_to_search)
-
-print(f"The roll number for {name_to_search} is {roll_number_result}")
