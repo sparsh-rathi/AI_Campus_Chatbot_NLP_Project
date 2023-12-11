@@ -7,16 +7,10 @@ The repository is for the NLP Project on AI Campus Chatbot
 **How to run the chatbot:**
 
 1. Make sure to open the folder with all the files, that is, keep the files necessarily in one folder.
-<br>
 2. Run the train_model.py file.
-<br>
-![image](https://raw.githubusercontent.com/sparsh-rathi/AI_Campus_Chatbot_NLP_Project/assets/115660384/74dea85f-d5a6-4c6b-a8a9-9d22d0e1b9de.jpg)
-<br>
+[image](https://raw.githubusercontent.com/sparsh-rathi/AI_Campus_Chatbot_NLP_Project/assets/115660384/74dea85f-d5a6-4c6b-a8a9-9d22d0e1b9de.jpg)
 3. Run the sourcecode.py file. This will open the GUI for the chatbot.
-<br>
-![image](https://raw.githubusercontent.com/sparsh-rathi/AI_Campus_Chatbot_NLP_Project/assets/115660384/92818d4a-d1db-49ab-bffe-ed5638c46a32.jpg)
-
-<br>
+[image](https://raw.githubusercontent.com/sparsh-rathi/AI_Campus_Chatbot_NLP_Project/assets/115660384/92818d4a-d1db-49ab-bffe-ed5638c46a32.jpg)
 4. How to write the commands (Some of the prompts need to be written as in the JSON file):
    <br>
    "get_student_name": roll number of NAME
