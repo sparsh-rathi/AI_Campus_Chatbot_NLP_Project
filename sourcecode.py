@@ -47,6 +47,36 @@ def predict_class(sentence, model):
         return_list.append({"intent": classes[r[0]], "probability": str(r[1])})
     return return_list
 
+def getResponse(sen, ints, intents_json):
+    tag = ints[0]['intent']
+    result = ""
+    list_of_intents = intents_json['intents']
+
+    for i in list_of_intents:
+        if (i['tag'] == tag):
+            if (i['tag'] == 'greeting' or i['tag'] == 'goodbye' or i['tag'] == 'thanks' or i['tag'] == 'noanswer' or i['tag'] == 'options' or i['tag'] == 'students_info'):
+                result = random.choice(i['responses'])
+                break
+            if i['tag'] == 'directions':
+                if any(keyword in sen.lower() for keyword in ["where is", "find", "navigate to", "where can i find"]):
+                    location = None
+                    for pattern in i['patterns']:
+                        if pattern.lower() in sen.lower():
+                            for floor, locations in i['responses'][0].items():
+                                if any(loc.lower() in sen.lower() for loc in locations.keys()):
+                                    location = next(
+                                        loc for loc in locations if loc.lower() in sen.lower())
+                                    break
+                    if floor:
+                        result = f"The {location} is located at: {i['responses'][0][floor][location]}"
+                    else:
+                        result = "I'm sorry, I couldn't determine the location you're asking about."
+                    break
+                else:
+                    result = "I'm sorry, I didn't understand the location-related question."
+                break
+    return result
+
 def chatbot_response(msg):
     ints = predict_class(msg, model)
 
