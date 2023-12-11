@@ -9,11 +9,10 @@ The repository is for the NLP Project on AI Campus Chatbot
 1. Make sure to open the folder with all the files, that is, keep the files necessarily in one folder.
 <br>
 2. Run the train_model.py file.
-<br>
-![image](https://github.com/sparsh-rathi/AI_Campus_Chatbot_NLP_Project/assets/115660384/84da1d3a-c105-49de-aa07-6a4b8162cd84)
+![image](https://github.com/sparsh-rathi/AI_Campus_Chatbot_NLP_Project/assets/115660384/3791dbbf-8e9a-4275-9118-c47ed64cdb35)
 
 ">
-3. Run the sourcecode.py file. This will open the GUI for the chatbot.
+4. Run the sourcecode.py file. This will open the GUI for the chatbot.
 ![image](https://github.com/sparsh-rathi/AI_Campus_Chatbot_NLP_Project/assets/115660384/92818d4a-d1db-49ab-bffe-ed5638c46a32)
 
 ">
