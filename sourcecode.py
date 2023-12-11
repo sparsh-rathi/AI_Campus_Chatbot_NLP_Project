@@ -56,7 +56,7 @@ def getResponse(sen, ints, intents_json):
     list_of_intents = intents_json['intents']
     for i in list_of_intents:
         if(i['tag']== tag):
-            if (i['tag'] == 'greeting' or i['tag'] == 'goodbye' or i['tag'] == 'thanks'  or i['tag'] == 'noanswer' or i['tag'] == 'options' or i['tag'] == 'joke' or i['tag'] == 'python_is_best' or i['tag'] == 'students_info'):
+            if (i['tag'] == 'greeting' or i['tag'] == 'goodbye' or i['tag'] == 'thanks'  or i['tag'] == 'noanswer' or i['tag'] == 'options' or i['tag'] == 'students_info'):
                 result = random.choice(i['responses'])
                 break
             elif(i['tag']== 'get_student_name'):
