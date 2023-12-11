@@ -90,7 +90,7 @@ def getResponse(sen, ints, intents_json):
                         else:
                             continue
                 if (result == ""):
-                    result = "name for given roll number not found"
+                    result = "Sorry, the student you are looking for could not be found :("
             
             elif (i['tag'] == 'get_student_roll'):
                 lis = list(sen.split(' '))
@@ -110,8 +110,28 @@ def getResponse(sen, ints, intents_json):
                         else:
                             continue
                 if (result == ""):
-                    result = " roll number for given student name not found"
+                    result = "Sorry, the student you are looking for could not be found :("
                     break
+
+            elif (i['tag'] == 'get_labexam_date'):
+                lis = list(sen.split(' '))
+                l = len(lis)
+                for idx, val in enumerate(lis):
+                    if (val == 'of'):
+                        n = idx
+                        break
+                j = lis[n+1:]
+                k = "".join(j)
+                sid = i['responses']
+                for a in sid:
+                    for b in a['dates']:
+                        if ((b.replace(' ', '').lower()) == (k.replace(' ', '').lower())):
+                            result = a['dates'][b]
+                            break
+                        else:
+                            continue
+                    if (result == ""):
+                        result = "Details for the subject you are looking for could not be found :("
     
     return result
 
